@@ -154,8 +154,6 @@ bol-bot/
 | `config/roundproxies.yaml` | Residential proxy credentials (NL recommended) |
 | `config/profiles.yaml` | Shipping / profile details for checkout |
 
-All sensitive files have `.example` templates in the repo.
-
 ---
 
 ## Environment variables (optional)
@@ -167,27 +165,6 @@ All sensitive files have `.example` templates in the repo.
 | `BOL_CHECKOUT_PLAYWRIGHT=1` | Force browser-only checkout |
 | `BOL_AFTERPAY_FAST=0` | Disable fast Afterpay path (more retries, slower) |
 
----
-
-## Pushing to GitHub
-
-This folder (`bol-bot-github`) is a **clean copy** for GitHub — your working `BOL-BOT` folder with secrets is untouched.
-
-From this folder:
-
-```powershell
-cd "path\to\bol-bot-github"
-git init
-git add .
-git commit -m "Initial commit: BOL-BOT bol.com monitor and checkout bot"
-git branch -M main
-git remote add origin https://github.com/Haseeb536/bol-bot.git
-git push -u origin main
-```
-
-Create the empty repo **`bol-bot`** on GitHub first (or pick another name and update the remote URL).
-
----
 
 ## Disclaimer
 
