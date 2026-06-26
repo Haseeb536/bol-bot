@@ -1,0 +1,20 @@
+# Hot-reload: save while the bot runs — changes apply in ~5 seconds.
+#
+# afterpay_products → Afterpay first, iDEAL backup if Afterpay unavailable (max 5)
+# products          → iDEAL only
+
+defaults:
+  quantity: 1
+  max_units_per_item: 2
+  max_items_per_checkout: 4
+  polling:
+    offline_min_sec: 3.0
+    offline_max_sec: 7.0
+    online_min_sec: 1.0
+    online_max_sec: 2.0
+
+afterpay_products:
+  - https://www.bol.com/nl/nl/p/your-drop-product/9300000123456789/
+
+products:
+  - https://www.bol.com/nl/nl/p/another-product/9300000987654321/

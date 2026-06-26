@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.spec.bak
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Secrets — never commit these
+.env
+.env.*
+bol_credentials.json
+bol_token.json
+login.txt
+config/discord.yaml
+config/roundproxies.yaml
+
+# Generated bundle (rebuild with: python _bundle_main.py)
+main.py
+
+# PyInstaller output
+BOL-BOT-Release/
+*.exe
+
+# Playwright browser cache (install locally)
+playwright-browsers/
+.ms-playwright/
+
+# Logs and local runtime data
+*.log
+payment_log/
+profiles/
+
+# Debug artifacts
+scripts/login_page_debug.html

@@ -1,0 +1,15 @@
+# Copy to roundproxies.yaml and fill from your RoundProxies dashboard.
+# Netherlands residential IPs work best for bol.nl.
+
+enabled: true
+host: residential.roundproxies.com
+port: 5000
+client_id: YOUR_CLIENT_ID
+password: YOUR_ROUNDPROXIES_PASSWORD
+country: Netherlands
+session_count: 10
+session_prefix: bol
+
+# Optional sticky proxy lines:
+# proxy_lines:
+#   - residential.roundproxies.com:5000:client-YOUR_CLIENT-country-Netherlands:YOUR_PASSWORD

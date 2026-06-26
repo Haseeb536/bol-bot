@@ -1,0 +1,18 @@
+# Proxy format: http://user:pass@host:port or socks5://user:pass@host:port
+
+proxy_groups:
+  # Tasks with proxy_group: roundproxies use NL residential sticky sessions (see config/roundproxies.yaml)
+  - name: roundproxies
+    max_failures: 5
+    health_check_url: https://www.bol.com/nl/
+    proxies: []
+
+  - name: default
+    max_failures: 3
+    health_check_url: https://www.bol.com/nl/
+    proxies: []
+
+  - name: residential_nl
+    max_failures: 5
+    health_check_url: https://www.bol.com/nl/
+    proxies: []

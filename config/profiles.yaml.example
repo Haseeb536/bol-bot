@@ -1,0 +1,26 @@
+profiles:
+  - name: default
+    email: "you@example.com"
+    payment_method: ideal
+    shipping:
+      first_name: Jan
+      last_name: Jansen
+      street: Hoofdstraat
+      house_number: "1"
+      postal_code: 1234AB
+      city: Amsterdam
+    billing: {}
+
+  - name: bol_main
+    email: "${BOL_USERNAME}"
+    password: "${BOL_PASSWORD}"
+    payment_method: ideal
+    shipping:
+      first_name: Jan
+      last_name: Jansen
+      street: Hoofdstraat
+      house_number: "42"
+      postal_code: 1012AB
+      city: Amsterdam
+      phone: "0612345678"
+    billing: {}

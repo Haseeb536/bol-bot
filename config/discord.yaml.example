@@ -1,0 +1,4 @@
+# Copy to discord.yaml and set your webhook URL.
+# Or set ECOM_DISCORD_WEBHOOK_URL in your environment.
+
+webhook_url: "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_TOKEN"

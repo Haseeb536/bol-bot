@@ -1,0 +1,11 @@
+# Hot-reload: save while bot runs — changes apply in ~5 seconds.
+
+defaults:
+  quantity: 1
+  max_units_per_item: 2
+  max_items_per_checkout: 4
+
+afterpay_products:
+  - https://www.bol.com/nl/nl/p/your-drop-product/9300000123456789/
+
+products: []
